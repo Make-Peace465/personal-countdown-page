@@ -1,0 +1,66 @@
+Create a page counter
+
+Basic functions:
+1. A display screen which will shows the current number
+2. A button to increase the value by 1 upon click
+3. A button to decrease the value by 1 upon click
+4. The minimum is 0 and the maximum is 100
+
+
+
+PseudoCode:
+LET num equal to 10
+
+1. SETUP
+    Variables:
+    - Create a variable called count and set its starting value to 10
+    HTML: 
+    - Find the HTML element that display the number and store it in a variable called displayElement
+    - Find the HTML button for increasing the count and store it in a variable called plusButton
+    - Find the HTML button for decreasing the count and store it in a variable called minusButton
+    Initial Display:
+    - Update the displayElement's text to show the starting value of count
+
+2. Create a function to increase the value by 1 upon click
+    - When clicked
+    - Check if num is already 100, if yes, exit from the function
+    - Increase the value by 1
+    - Update the screen
+    - Return the value to the variable num
+
+PseudoCode:
+
+FUNCTION increaseByOne(): 
+    IF num is larger or equals to 100 THEN
+        RETURN
+    ENDIF
+
+    INCREMENT count by 1
+    UPDATE text of displayElement to be the new value of count
+END FUNCTION
+
+3. Create a function to decrease by 1 upon click
+    - When clicked
+    - Check if num is already 0, if yes, exit from the function
+    - Decrease the value by 1
+    - Update the screen
+    - Return the value to the variable num
+
+PseudoCode:
+
+FUNCTION decreaseByOne
+    IF num is equals to 0 THEN
+        RETURN
+    ENDIF
+
+    INCREMENT count by 1;
+    numDisplay.textContent = num
+    RETURN num;
+
+
+CSS styling:
+Background color: #E9E6DD;
+font-family: sans-serif;
+button:
+- background color: light green;
+- font color: dark brown?
